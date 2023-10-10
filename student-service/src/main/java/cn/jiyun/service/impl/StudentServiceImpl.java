@@ -15,6 +15,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public List<Student> findStudent() {
+        System.out.println("我被调用了");
         return studentMapper.selectList(null);
     }
 }

@@ -1,6 +1,7 @@
 package cn.jiyun.controller;
 
 
+import cn.jiyun.pojo.Student;
 import cn.jiyun.pojo.Teacher;
 import cn.jiyun.pojo.User;
 import cn.jiyun.service.UserService;
@@ -30,6 +31,10 @@ public class UserController {
     public List<Teacher> getAll() {
         log.info("请求进来啦: {}", userService.getAll());
         return userService.getAll();
+    }
+    @GetMapping("/getS")
+    public List<Student> getS(){
+        return userService.getS();
     }
 
 }
