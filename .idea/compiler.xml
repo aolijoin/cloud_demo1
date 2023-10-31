@@ -15,7 +15,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commons" target="17" />
       <module name="dept-service" target="1.8" />
+      <module name="Eureka-service" target="17" />
+      <module name="student-service" target="17" />
+      <module name="teacher-service" target="17" />
+      <module name="user-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Eureka-service.iml" filepath="$PROJECT_DIR$/Eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/student-service.iml" filepath="$PROJECT_DIR$/student-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/teacher-service.iml" filepath="$PROJECT_DIR$/teacher-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service.iml" filepath="$PROJECT_DIR$/user-service.iml" />
     </modules>
   </component>
 </project>

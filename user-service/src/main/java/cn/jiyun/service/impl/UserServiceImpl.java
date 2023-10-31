@@ -5,6 +5,7 @@ import cn.jiyun.pojo.Student;
 import cn.jiyun.pojo.Teacher;
 import cn.jiyun.pojo.User;
 import cn.jiyun.service.UserService;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -14,10 +15,12 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
+
+    @Resource
     private UserMapper userMapper;
     @Autowired
     private RestTemplate restTemplate;
+
 
     @Override
     public List<User> findAll() {
@@ -38,6 +41,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<Student> getS() {
         List<Student> forObject = restTemplate.getForObject("http://student/student/getAll", List.class);
+//        获取一个student
+        Student object = restTemplate.getForObject("http://student/student/getOne", Student.class);
+
+//        List<Student> all = studentClient.getAll();
         return forObject;
     }
 }
